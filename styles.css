@@ -1,0 +1,35 @@
+body{
+    background-color: blueviolet;
+}
+h1 {
+   font-size: 100px;
+    margin: 0;
+    text-align: center;
+}
+#Start{
+    display: block;
+    width: 90px;
+    height: 60px;
+    padding: 3px;
+    border: 1px solid blue; 
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: rgb(172, 193, 255);
+    
+}
+#game{
+    display:block;
+    border: 1px black;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: center;
+}
+form{
+    width: 200px;
+    margin: auto;
+    
+}

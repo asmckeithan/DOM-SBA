@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;
+    background-color: rgba(170, 113, 222, 0.798);
 }
 h1 {
    font-size: 100px;
@@ -21,15 +21,21 @@ h1 {
 #game{
     display:block;
     border: 1px black;
-    width: 500px;
+    width: 400px;
     height: 500px;
     padding: 10px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: rgb(243, 220, 250);
     text-align: center;
 }
-form{
-    width: 200px;
-    margin: auto;
-    
+input{
+    width: 240px;
+    height: 30px;
+    padding: 5px;
+    margin: 2%;
+    box-shadow: 3px 2px 2px rgb(221, 139, 221);
+}
+input[type=text] {
+    text-align: center;
+    margin-top: 20px;
 }

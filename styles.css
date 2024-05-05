@@ -1,11 +1,10 @@
 body{
-    background-color: rgba(170, 113, 222, 0.798);
+    background: radial-gradient(circle, rgb(221, 131, 242) 0%, rgba(106, 50, 203, 0.835) 100%);
 }
 h1 {
    font-size: 80px;
     margin: 0;
     text-align: center;
-    font: #ecbcfd;
 
 }
 h1.animate__bounce {
@@ -14,31 +13,53 @@ h1.animate__bounce {
 }
 #Start{
     display: block;
-    width: 90px;
-    height: 60px;
-    padding: 3px;
+    width: 100px;
+    height: 70px;
+    padding: 8px;
     border: 1px solid blue; 
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     background-color: rgb(172, 193, 255);
-    
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#button{
+    margin-top: 10px;
+    width: 80px;
 }
 #game{
-    display:block;
+    display:inline-block;
     border: 1px black;
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     margin: auto;
     background-color: rgb(243, 220, 250);
     text-align: center;
+    border-radius:3%;
+    margin-top: 100px;
+    
+}
+
+#form{
+    display:block;
+    border: 1px black;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(243, 220, 250);
+    text-align: center;
+    border-radius:3%;
+    margin-top: 100px;
+    
 }
 input{
     width: 240px;
     height: 30px;
-    padding: 5px;
-    margin: 2%;
+    padding: 8px;
+    margin: 4%;
     box-shadow: 3px 2px 2px rgb(221, 139, 221);
 }
 input[type=text] {

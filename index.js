@@ -25,3 +25,22 @@ div.style.padding = '20px'
 div.style.marginTop = '4px'
 console.log(div);
 
+//Start Game 
+const startGameBtn = document.getElementById('button')
+startGameBtn.addEventListener('click', function (event){
+    alert(" Let the Games Begin! ")
+    event.preventDefault
+})
+
+//Now We work on the game card 
+const submitBtn = document.getElementById('submit-btn')
+submitBtn.addEventListener('click', function(event){
+alert ('Awesome Job')
+    //if the answer is incorrect we need to alert the user of incorrect answer 
+    if (event !== result ){
+        alert ("Incorrect Please Try Again ")
+    }
+
+
+
+})

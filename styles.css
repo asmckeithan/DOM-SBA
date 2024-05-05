@@ -24,15 +24,15 @@ h1.animate__bounce {
     margin-top: 50px;
     border-radius: 10px;
 }
-#button{
+#button1{
     margin-top: 10px;
     width: 80px;
 }
-#game{
-    display:inline-block;
+.flip-container{
+    display:block;
     border: 1px black;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     padding: 10px;
     margin: auto;
     background-color: rgb(243, 220, 250);
@@ -66,3 +66,39 @@ input[type=text] {
     text-align: center;
     margin-top: 20px;
 }
+/* flip the container when the card is click  */
+.flip-container:hover .flipper, .flip-container.click .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+    width: 300px;
+    height: 380px;
+}
+/* Flip speed  */
+.flipper {
+    transition: 0.7s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+/* Hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Front pane, placed above back */
+.front {
+    z-index: 2;
+
+    /* For Firefox 31 */
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+    margin-top: 50%;
+
+}
+

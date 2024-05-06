@@ -58,15 +58,11 @@ function createProblem() {
     }
 }
 
-
-const submitBtn = document.getElementById('submit-btn')
-submitBtn.addEventListener('click', function(event){
-alert ('Awesome Job')
-    //if the answer is incorrect we need to alert the user of incorrect answer 
-    if (event !== result ){
-        alert ("Incorrect Please Try Again ")
-    }
+//Click card to flip 
+let flipCard = document.getElementsByClassName('flipper');
+flipCard.addEventListener( 'click', function() {
+  flipCard.classList.toggle('is-flipped');
+  flipCard.preventDefault
+});
 
 
-
-})

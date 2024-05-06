@@ -10,14 +10,14 @@
 
 </head>
 <body>
-    <iframe src="https://gifer.com/embed/Tc52" width=100% height=300.000 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p>
-   
+    <!-- <iframe src="https://gifer.com/embed/Tc52" width=100% height=300.000 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p>
+    -->
     <h1 class="animate__animated animate__backInDown animate__delay-1s">Lets Play a Game </h1>
     
     <p id="Start">Free Trial <br>  Play Now 
        <br> <button id="button">Start Here </button>
     </p>
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flip-container" >
         <div class="flipper">
             <div class="front">
                 <h3>Fill In The Blank With Correct Answer</h3><!-- Front content -->
@@ -26,7 +26,7 @@
     
             <div class="back">
                   <!-- Back content -->
-                <input  id="gameInput" type="text" placeholder="Place Answer Here" >
+                <input required id="gameInput" type="text" placeholder="Place Answer Here" >
                 <button id="submit-btn">Submit</button>
                 <p id="result"></p>
               
@@ -37,8 +37,8 @@
     <form id="form"required action="submit"> <br>
 
         <input required type="text" name="Firstname" placeholder="First Name" width="200px "><br>
-        <input type="text" name="username" placeholder="username"> <br>
-        <input type="text" name="password" placeholder="Password "> <br>
+        <input type="text" name="username" placeholder="username" minlength="4" maxlength="20"> <br>
+        <input type="text" name="password" placeholder="Password "  pattern="^[a-zA-Z]*$" min="10"> <br>
         <button id="button1" >Sign-up</button>
     </form>
     </div>

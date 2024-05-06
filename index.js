@@ -33,6 +33,32 @@ startGameBtn.addEventListener('click', function (event){
 })
 
 //Now We work on the game card 
+//Lets start with the questions , first we want random numbers to use for our math problems 
+const gameProblem = document.querySelector('#game-problems')
+let problem = {
+    score:0,
+    wrong:0
+}
+function problemGenerator(){
+    problem.currentProblem = createProblem()
+    gameProblem.innerHTML = `${problem.currentProblem.num1} ${problem.currentProblem.operator} ${problem.currentProblem.num2}`
+}
+problemGenerator()
+
+function randomNum(max){
+    return Math.floor(Math.random() * (max + 1))//max is a prameter to make it flexible
+}
+function createProblem() {
+    return {
+        //create properties
+        num1:randomNum(10),
+        num2:randomNum(10),
+        operator: ['+','-'][randomNum(1)]
+        
+    }
+}
+
+
 const submitBtn = document.getElementById('submit-btn')
 submitBtn.addEventListener('click', function(event){
 alert ('Awesome Job')

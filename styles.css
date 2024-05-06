@@ -5,6 +5,7 @@ h1 {
    font-size: 80px;
     margin: 0;
     text-align: center;
+    margin-top: 100px;
 
 }
 h1.animate__bounce {
@@ -67,7 +68,7 @@ input[type=text] {
     margin-top: 20px;
 }
 /* flip the container when the card is click  */
-.flip-container:hover .flipper, .flip-container.click .flipper {
+.flip-container.click .flipper {
     transform: rotateY(180deg);
 }
 .flip-container, .front, .back {
@@ -92,9 +93,11 @@ input[type=text] {
 /* Front pane, placed above back */
 .front {
     z-index: 2;
-
+    
     /* For Firefox 31 */
     transform: rotateY(0deg);
+    margin-top: 20%;
+    font-size: 25px;
 }
 .back {
     transform: rotateY(180deg);
